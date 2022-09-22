@@ -1,0 +1,20 @@
+<script>
+  //Recebe o preço do produto e calcula o aumento do preço, baseado no seguinte critério:
+  //- até 280 (inclusive): aumento de 20%
+  //- até 700 (inclusive): aumento de 15%
+  //- até 1500 (inclusive): aumento de 10%
+  //- acima de 1500: aumento de 5%
+  //Informe: o preço atual, o percentual de aumento, o valor do aumento e o novo preço, todos com duas casas decimais.
+
+  const preço = Number(prompt("Me Diga O Seu Preço."));
+
+  let percentualDeAumento;
+
+  if (preço <= 280) percentualDeAumento = 20;
+  else if (preço <= 700) percentualDeAumento = 15;
+  else if (preço <= 1500) percentualDeAumento = 10;
+  else percentualDeAumento = 5;
+
+  const preçoFinal = (percentualDeAumento / 100) * preço + preço;
+  document.write(`R$ ${preçoFinal.toFixed(2)}`);
+</script>

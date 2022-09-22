@@ -1,0 +1,15 @@
+<script>
+  //Recebe três valores numéricos, e retorna o menor dos três.
+
+  const numero1 = Number(prompt("1 Numero"));
+  const numero2 = Number(prompt("2 Numero"));
+  const numero3 = Number(prompt("3 Numero"));
+
+  if (numero1 < numero2 && numero1 < numero3) {
+    document.write(`Esse e o numero menor ${numero1} (:`);
+  } else if (numero2 < numero1 && numero2 < numero3) {
+    document.write(`Esse e o numero menor ${numero2} (:`);
+  } else if (numero3 < numero1 && numero3 < numero2) {
+    document.write(`Esse e o numero menor ${numero3} (:`);
+  }
+</script>

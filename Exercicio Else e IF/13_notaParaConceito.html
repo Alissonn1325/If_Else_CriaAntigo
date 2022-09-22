@@ -1,0 +1,23 @@
+<script>
+  //Converta a nota para conceito, conforme a tabela abaixo:
+  //Nota:                     Conceito:
+  //Entre 10.0 e 9.0            A
+  //Entre 8.9 e 8.0             B
+  //Entre 7.9 e 7.0             C
+  //Entre 6.9 e 6.0             D
+  //Entre 5.9 e zero            E
+
+  const notaDoAluno = Number(prompt("Informe A Nota Do Aluno."));
+
+  if (notaDoAluno >= 9) {
+    document.write(`A ${notaDoAluno} Será Conceito A`);
+  } else if (notaDoAluno >= 8) {
+    document.write(`A ${notaDoAluno} Será Conceito B`);
+  } else if (notaDoAluno >= 7) {
+    document.write(`A ${notaDoAluno} Será Conceito C`);
+  } else if (notaDoAluno >= 6) {
+    document.write(`A ${notaDoAluno} Será Conceito D`);
+  } else {
+    document.write(`A ${notaDoAluno} Será Conceito E`);
+  }
+</script>
